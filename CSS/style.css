@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.topMenu {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 30px;
+}
+
+.text {
+    float: left;
+    color: white;
+}
+
+.rightMenu {
+    background-color: rgb(179, 116, 239);
+    min-width: 10%;
+    min-height: 40rem;
+    position: absolute;
+}
+
+.content {
+    background-color: rgb(67, 0, 130);
+    position: absolute;
+    min-height: 40rem;
+    min-width: 80%;
+    left: 10%;
+}
+
+.leftMenu {
+    background-color: rgb(219, 180, 255);
+    position: absolute;
+    min-height: 40rem;
+    min-width: 10%;
+    right: 0;
+}
+
+.footer {
+    background-color: rgb(102, 0, 197);
+    min-height: 5rem;
+    width: 100%;
+    position: absolute;
+}
