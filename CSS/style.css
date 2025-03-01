@@ -1,54 +1,59 @@
+:root {
+    --color1: blueviolet;
+    --color2: rgb(172, 84, 255);
+    --color3: rgb(208, 157, 255);
+    --color4: rgb(228, 200, 255);
+    --color5: rgb(106, 0, 205);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.main-container {
+    margin: 0 10%;
+    justify-content: center;
 }
 
-.topMenu {
-    background-color: blueviolet;
+.bg {
+    background-image: url(../Images/plannerbg.jpg);
+}
+
+.topNav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    background-color: var(--color1);
     min-height: 30px;
 }
 
-.text {
-    float: left;
-    color: white;
+.topNav p {
+    align-content: center;
+}
+.mid {
+    display: flex;
+    height: 600px;
 }
 
-.rightMenu {
-    background-color: rgb(179, 116, 239);
-    min-width: 10%;
-    min-height: 40rem;
-    position: absolute;
+.RightMenu {
+    min-width: 20%;
+    background-color: var(--color2);     
 }
 
-.content {
-    background-color: rgb(67, 0, 130);
-    position: absolute;
-    min-height: 40rem;
-    min-width: 80%;
-    left: 10%;
+.Content {
+    min-width: 60%;
+    background-color: var(--color3);
 }
 
-.leftMenu {
-    background-color: rgb(219, 180, 255);
-    position: absolute;
-    min-height: 40rem;
-    min-width: 10%;
-    right: 0;
+.LeftMenu {
+    min-width: 20%;
+    background-color: var(--color4);
 }
 
 .footer {
-    background-color: rgb(102, 0, 197);
-    min-height: 5rem;
-    width: 100%;
-    position: absolute;
+    background-color: var(--color5);
+    min-height: 10vh;
 }
